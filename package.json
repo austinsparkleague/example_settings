@@ -1,0 +1,31 @@
+{
+  "name": "Settings",
+  "author": "Edwin Finch",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "Settings",
+    "uuid": "89b41e19-401c-4f25-8031-d37f4faa8fdc",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "boolean_box", "color_picker"
+    ],
+    "resources": {
+      "media": []
+      },
+      "capabilities":[
+          "configurable"
+      ]
+  }
+}
