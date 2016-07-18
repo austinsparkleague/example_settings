@@ -4,7 +4,7 @@ Pebble.addEventListener("webviewclosed", function(e){
     console.log("Got response " + e.response);
     if(e.response){
         //If it exists it sends it to the Pebble as a JSON object
-        Pebble.sendAppMessage(JSON.parse(e.response));
+        Pebble.sendAppMessage(JSON.parse(decodeURIComponent(e.response)));
     }
 });
 
